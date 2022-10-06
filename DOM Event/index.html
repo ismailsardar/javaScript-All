@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Event</title>
+
+    <style>
+        body{height: 1000px;}
+        form label{
+            display: block;
+            margin-bottom: 1rem;
+        }
+        video{
+            width: 500px;
+            height: 400px;
+        }
+        .mouse{
+            background-color: cadetblue;
+            height: 12rem;
+            width: 12rem;
+        }
+        #dregD{
+            height: 10rem;
+            width: 10rem;
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    
+    <label for="name">
+        Name:
+        <input type="text" name="name" id="lable_1">
+    </label> -->
+
+    <div>
+        <label for="language">
+            <input type="checkbox" name="language" id="" value="javaScript">
+            JavaScript
+        </label>
+        <label for="">
+            <input type="checkbox" name="language" id="" value="node.js">
+            Node.Js
+        </label>
+    </div>
+
+    <label for="deparment">Departments</label>
+
+    <select name="department" id="department">
+        <option value="CSE">CSE</option>
+        <option value="MSC">MSC</option>
+        <option value="BSC">BSC</option>
+    </select> 
+
+<h2>This TextArea</h2>
+    <textarea name="" id="textareas" cols="30" rows="10"></textarea> -->
+
+    <!-- form submit  -->
+     <form action="">
+        <label for="name">
+            Name:
+            <input type="text" name="name" id="name" autofocus required>
+        </label>
+        <label for="email">
+            Email:
+            <input type="email" name="email" id="email" size="25px" required>
+        </label>
+        <label for="pssword">
+            Password:
+            <input type="password" name="password" id="password" required minlength="4" maxlength="10">
+        </label>
+        <div>
+            <input type="submit" value="submit">
+        </div>
+    </form> 
+
+
+    <!-- Media => vedio/Audio event  -->
+     <video controls>
+        <source src="./media/ismail.mp4">
+    </video>
+
+    <!-- lode/unlode/seroll/resize/togell -->
+    <details>
+        <summary>Toggle</summary>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga harum qui excepturi suscipit officia veritatis id enim voluptatem iusto corrupti.</p>
+    </details> 
+
+    <!-- mouse Event  -->
+    <div class="mouse">
+        <p>Mouse Event is occurd</p>
+    </div>
+
+    <div>
+        <button class="malBtn">Btn 1</button>
+        <button class="malBtn">Btn 2</button>
+        <button class="malBtn">Btn 3</button>
+    </div> 
+
+
+    <!-- kebord Event handelar -->
+    <textarea name="" id="kebord_area" cols="30" rows="10"></textarea> 
+
+     <!-- mouse event  -->
+    <input type="text" name="" id="mouse_4e">
+    <p class="clipebord"></p> 
+
+    <!-- DragEvent -->
+    <div id="dregD"></div>
+    <p id="dregP" draggable="true">Move to that Div</p>
+
+    <script src="app.js"></script>
+</body>
+</html>

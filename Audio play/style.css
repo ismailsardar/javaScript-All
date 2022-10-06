@@ -1,0 +1,12 @@
+.btnAu{
+    padding: 10px 25px;
+    border: none;
+    background-color: darkcyan;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.anem{
+    box-shadow: 0 10px 15px tomato;
+    opacity: 0.7;
+}
